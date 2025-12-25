@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Karakter kodlaması UTF-8 olarak ayarlandı, Türkçe karakterleri desteklemek için. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sayfanın başlığı - tarayıcı sekmesinde görüntülenir. -->
+    <title>Bézier Grafik Uygulaması</title>
+    <!-- Dış CSS dosyasını bağla. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ana kapsayıcı div - tüm sayfa içeriğini barındırır. -->
+    <div class="container">
+        <!-- Canvas elementi: 2D grafikleri çizmek için kullanılır
+             Bézier eğrileri ve fraktal ağaç animasyonları burada render edilir. -->
+        <canvas id="canvas"></canvas>
+
+        <!-- Kontrol paneli - kullanıcı arayüzü ve bilgi gösterilir. -->
+        <div class="controls">
+            <!-- Kontrol kısayolları bölümü. -->
+            <div class="control-section">
+                <h2>Kontroller</h2>
+                <!-- Aşağıdaki tuşlar uygulamada farklı modları ve işlemleri kontrol eder. -->
+                <p><kbd>1</kbd> - Bézier DEMO Modu</p>
+                <p><kbd>2</kbd> - Ağaç Modu</p>
+                <p><kbd>R</kbd> - Sıfırla</p>
+                <p><kbd>S</kbd> - Ekran Görüntüsünü Kaydet</p>
+                <p><kbd>Z</kbd> - Yakınlaştır</p>
+            </div>
+
+            <!-- Bilgi bölümü - FPS ve modu gösterir. -->
+            <div class="info-section">
+                <h2>Bilgi</h2>
+                <!-- JavaScript tarafından dinamik olarak güncellenen bilgi alanları. -->
+                <p id="modeDisplay">Modu:Ağaç</p>
+                <p id="fpsDisplay">FPS: 0</p>
+                <p style="font-size: 14px; margin: 0; position: relative; top: 20px; text-align: right; color: #888;">
+                    Ahmet TURGUT</p>
+            </div>
+        </div>
+    </div>
+    <!-- Harici JavaScript dosyasını bağla. -->
+    <script src="main.js"></script>
+</body>
+
+</html>
